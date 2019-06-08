@@ -7,21 +7,20 @@ const int backlightPin = 12;
 int switchState = 0;
 int prevSwitchState = 0;
 int reply;
- const char *firstLine[] = {"neverthesoftadve", "Everything will", "I have become", "Guatemalan",
-    "Buen Camino", "Just another", "Go howl at", "Love you like", "High five more", "That Yolanda",
-    "I think", "Madame madame!", "Clackclackclack!", "Iohno if it's", "This is not",  
-    "Silliest thing", "Slip slidin on", "So its glass", "SPACE TRUCKIIIIN", "COCKSBURY BUTTS!", 
-    "Shu shu shu", "WHAT A WASTE"
-  };
+
+const char *firstLine[] = {"neverthesoftadve", "Everything will", "I have become", "Guatemalan",
+  "Buen Camino", "Just another", "Go howl at", "Love you like", "High five more", "That Yolanda",
+  "I think", "Madame madame!", "Clackclackclack!", "Iohno if it's", "This is not",  
+  "Silliest thing", "Slip slidin on", "So its glass", "SPACE TRUCKIIIIN", "COCKSBURY BUTTS!", 
+  "Shu shu shu", "WHAT A WASTE"
+};
       
-   const char *secondLine[] = {"ntureofundoom", "work out", "sentient - Help", "soccer ball", 
-    "you pilgram", "onionhead", "the moon", "a big dog", "dead than alive", "She learn",
-    "youre great.", "Le chapeau!!", "Spanish storks", "sposta do that.", "fun for me.", 
-    "Ive ever heard.", "Jack Kendrick", "sea garbage?", "THROUGH ARIZONA", "Hehehe", 
-    "Sugarbread", "But good darts."
-  };
-
-
+const char *secondLine[] = {"ntureofundoom", "work out", "sentient - Help", "soccer ball", 
+  "you pilgram", "onionhead", "the moon", "a big dog", "dead than alive", "She learn",
+  "youre great.", "Le chapeau!!", "Spanish storks", "sposta do that.", "fun for me.", 
+  "Ive ever heard.", "Jack Kendrick", "sea garbage?", "THROUGH ARIZONA", "Hehehe", 
+  "Sugarbread", "But good darts."
+};
 
 void setup() {
   // put your setup code here, to run once:
@@ -36,11 +35,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-   
-  
   switchState = digitalRead(switchPin);
 
-      
   if (switchState != prevSwitchState){
     if (switchState == LOW){
       reply = random(22);
