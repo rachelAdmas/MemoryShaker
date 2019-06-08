@@ -8,6 +8,7 @@ int switchState = 0;
 int prevSwitchState = 0;
 int reply;
 
+//TODO: make these two lists tuples, or dictionary keys for better readability. 
 const char *firstLine[] = {"neverthesoftadve", "Everything will", "I have become", "Guatemalan",
   "Buen Camino", "Just another", "Go howl at", "Love you like", "High five more", "That Yolanda",
   "I think", "Madame madame!", "Clackclackclack!", "Iohno if it's", "This is not",  
